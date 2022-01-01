@@ -9,6 +9,18 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  
+  <h1 class="hidden" id="greeting-user"></h1>
+  <form class="hidden" id="login-form">
+    <label for="input-text">What is your name??</label>
+    <input
+      id="input-text"
+      type="text"
+      placeholder="please enter your name"
+      maxlength="15"
+      minlength="1"
+      required>
+    <input type="submit" value="Login">
+  </form>
+  <script src="./js/greeting.js"></script>
 </body>
 </html>
