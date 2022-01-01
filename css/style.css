@@ -127,12 +127,11 @@ body::before {
 
 #todo-container {
   position: absolute;
-  top: 10%;
+  top: 15%;
   right: 5%;
   font-size: 1.4rem;
   width: 250px;
   text-align: right;
-  margin-top: 1rem;
 }
 
 #todo-container label {
@@ -166,6 +165,7 @@ body::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  line-height: 16px;
   padding: .8rem;
 }
 
@@ -174,10 +174,10 @@ body::before {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(255, 255, 255, 0.5);
   font-size: .4rem;
-  text-indent: -2px;
+  text-indent: -1px;
   color: #fff;
   opacity: 0.8;
-  width: 1rem;
+  width: 1.1rem;
   height: 1.2rem;
   -webkit-transition: .4s;
   transition: .4s;
@@ -199,7 +199,7 @@ body::before {
 
 #quotes-container q {
   display: block;
-  font-size: .8rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
