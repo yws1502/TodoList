@@ -1,5 +1,8 @@
-const clock = document.getElementById("clock");
+const timeZone = document.getElementById("timezone-container");
 const fullDate = document.getElementById("fullDate");
+const time = timeZone.querySelector(".time");
+const ampmEl = timeZone.querySelector(".ampm");
+const secEl = timeZone.querySelector(".sec");
 
 function getAMPMTime(hours, min, sec) {
   let ampm = hours >= 12 ? "PM" : "AM";
@@ -8,15 +11,16 @@ function getAMPMTime(hours, min, sec) {
   hours = String(hours).padStart(2, "0");
   min = String(min).padStart(2, "0");
   sec = String(sec).padStart(2, "0");
-
-  return `${hours}:${min}:${sec} ${ampm}`;
+  time.textContent = `${hours}:${min}`;
+  ampmEl.textContent = ampm;
+  secEl.textContent = sec;
 }
 
 function getTime(date) {
   let hours = date.getHours();
   let min = date.getMinutes();
   let sec = date.getSeconds();
-  clock.textContent = getAMPMTime(hours, min, sec);
+  getAMPMTime(hours, min, sec);
 }
 
 function getDate(date) {

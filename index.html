@@ -10,52 +10,51 @@
 </head>
 <body>
   <h1 class="text-hide">momentum website</h1>
-  <!-- greeting section start -->
-  <section id="greeting-container">
-    <h2 class="hidden" id="greeting-user"></h2>
-    <form class="hidden" id="login-form">
-      <label for="input-text">What is your name??</label>
-      <input
-      id="input-text"
-      type="text"
-      placeholder="please enter your name"
-      maxlength="15"
-      minlength="1"
-      required>
-      <input type="submit" value="Login">
-    </form>
-  </section>
-  <!-- greeting section end -->
 
-  <!-- weather today section start -->
-  <section id="weather-container">
-    <h2 class="text-hide">오늘의 날씨</h2>
-    <img src="" alt="오늘 날씨">
-    <span class="temp"></span>
-    <span class="location"></span>
-  </section>
-  <!-- weather today section end -->
+  <div class="container">
+    <!-- timezone section start -->
+    <section id="timezone-container">
+      <h2 class="text-hide">Time zone</h2>
+      <p id="fullDate">0000.00.00.SAT</p>
+      <p class="clock-container flex">
+        <span class="time">00:00</span>
+        <span class="flex-column">
+          <em class="ampm">AM</em>
+          <em class="sec">00</em>
+        </span>
+      </p>
+    </section>
+    <!-- timezone section end -->
 
-  <!-- timezone section start -->
-  <section id="timezone-container">
-    <h2 class="text-hide">Time zone</h2>
-    <p id="fullDate">0000.00.00.SAT</p>
-    <p id="clock">00:00:00</p>
-  </section>
-  <!-- timezone section end -->
+    <!-- greeting section start -->
+    <section id="greeting-container">
+      <h2 class="hidden" id="greeting-user"></h2>
+      <form class="hidden" id="login-form">
+        <label for="input-text">What is your name??</label>
+        <input
+        class="input-text"
+        id="input-text"
+        type="text"
+        maxlength="15"
+        required>
+        <input class="input-btn" type="submit" value="">
+      </form>
+    </section>
+    <!-- greeting section end -->
+  </div>
 
   <!-- todo list section stat -->
   <section id="todo-container">
     <h2 class="text-hide">todo list section</h2>
     <form class="todo-form">
-      <label class="text-hide" for="todoInput">todo 입력</label>
+      <label for="todoInput">To Do List</label>
       <input
-        id="todoInput"
-        type="text"
-        placeholder="Enter To do List"
-        required
+      class="input-text"
+      id="todoInput"
+      type="text"
+      required
       >
-      <input class="todo-submit" type="submit" value="commit">
+      <input class="input-btn todo-submit" type="submit" value="">
     </form>
     <ul class="todo-list"></ul>
   </section>
@@ -68,6 +67,16 @@
     <q class="author"></q>
   </section>
   <!-- quotes section end -->
+  
+  <!-- weather today section start -->
+  <section id="weather-container">
+    <h2 class="text-hide">오늘의 날씨</h2>
+    <img src="" alt="오늘 날씨">
+    <span class="temp"></span>
+    <span class="location"></span>
+  </section>
+  <!-- weather today section end -->
+
 
   <script src="./js/greeting.js"></script>
   <script src="./js/date.js"></script>

@@ -1,14 +1,198 @@
+// common
 .hidden {
   display: none;
 }
 
 body {
+  font-size: 10px;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   color: #fff;
+  text-align: center;
+  padding: 2rem;
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -10;
+  }
 }
 
-img {
-  width: 50px;
+.input-text {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  border-bottom: 1.5px solid rgba(255,255,255,0.6);
+  padding: .3rem;
+  // margin-left: 20px;
+  &:focus + .input-btn {
+    opacity: 0.5;
+    background-color: transparent;
+  }
+}
+
+.input-btn {
+  position: absolute;
+  right: 15%;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/icons/enter-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: .5s;
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// tinezone
+#timezone-container {
+  margin-bottom: 2rem;
+  #fullDate {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .clock-container {
+    .time {
+      font-size: 7rem;
+    }
+    .flex-column {
+      font-size: 3rem;
+      margin-left: .4rem;
+      em {
+        margin: .3rem;
+      }
+      em + em {
+        border-top: 1.2px solid rgba(255,255,255,0.5);
+      }
+      .ampm { color: rgba(255,255,255,0.8); }
+      .sec { font-size: 3.5rem;}
+    }
+  }
+}
+
+
+// greeting
+#greeting-container {
+  margin-bottom: 4rem;
+  #greeting-user {
+    font-size: 2rem;
+  }
+  #login-form {
+    label {
+      font-size: 1.4rem;
+      display: block;
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+
+// Todo
+#todo-container {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  font-size: 1.4rem;
+  width: 250px;
+  text-align: right;
+  margin-top: 1rem;
+  label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .input-text {
+    width: 75%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .input-btn {
+    right: 0;
+  }
+  .todo-list {
+    display: inline-block;
+    width: 78%;
+    font-size: .8rem;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-color: rgba(0,0,0,0.2);
+    li {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      padding: .8rem;
+      button {
+        border-radius: 100%;
+        border: 1px solid rgba(255,255,255,0.4);
+        background-color: rgba(255,255,255,0.5);
+        font-size: .4rem;
+        text-indent: -2px;
+        color: #fff;
+        opacity: 0.8;
+        width: 1rem;
+        height: 1.2rem;
+        transition: .4s;
+        &:hover {
+          color: #ff3737;
+          border-color: #ff3737;
+        }
+      }
+    }
+  }
+}
+
+
+// quotes 
+#quotes-container {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  q {
+    display: block;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+// weather
+#weather-container {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  text-align: right;
+  img {
+    display: inline-block;
+    width: 50px;
+  }
+  .temp {
+    vertical-align: 17px;
+    font-size: 1.5rem;
+  }
+  .location {
+    display: block;
+    font-size: 1rem;
+  }
 }

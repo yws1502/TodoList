@@ -45,5 +45,5 @@ const toDayQuote = quotes[parseInt(Math.random()*quotes.length)]
 const quote = document.querySelector("#quotes-container .quote");
 const author = document.querySelector("#quotes-container .author");
 
-quote.textContent = toDayQuote.quote;
-author.textContent = toDayQuote.author;
+quote.textContent = `"${toDayQuote.quote}"`;
+author.textContent = `- ${toDayQuote.author} -`;
