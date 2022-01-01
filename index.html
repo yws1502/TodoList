@@ -9,29 +9,50 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <h1 class="hidden" id="greeting-user"></h1>
-  <form class="hidden" id="login-form">
-    <label for="input-text">What is your name??</label>
-    <input
+  <h1 class="text-hide">momentum website</h1>
+  <!-- greeting section start -->
+  <section id="greeting-container">
+    <h2 class="hidden" id="greeting-user"></h2>
+    <form class="hidden" id="login-form">
+      <label for="input-text">What is your name??</label>
+      <input
       id="input-text"
       type="text"
       placeholder="please enter your name"
       maxlength="15"
       minlength="1"
       required>
-    <input type="submit" value="Login">
-  </form>
-  <div class="timezone">
+      <input type="submit" value="Login">
+    </form>
+  </section>
+  <!-- greeting section end -->
+
+  <!-- timezone section start -->
+  <section id="timezone-container">
+    <h2 class="text-hide">Time zone</h2>
     <p id="fullDate">0000.00.00.SAT</p>
     <p id="clock">00:00:00</p>
-  </div>
-  <div id="quotes-wrap">
+  </section>
+  <!-- timezone section end -->
+
+  <!-- todo list section stat -->
+  <section id="todo-container">
+    <h2 class="text-hide">todo list section</h2>
+  </section>
+  <!-- todo list section end -->
+
+  <!-- quotes section start -->
+  <section id="quotes-container">
+    <h2 class="text-hide">quotes section</h2>
     <q class="quote"></q>
     <q class="author"></q>
-  </div>
+  </section>
+  <!-- quotes section end -->
+
   <script src="./js/greeting.js"></script>
-  <script src="./js/clock.js"></script>
+  <script src="./js/date.js"></script>
   <script src="./js/background.js"></script>
   <script src="./js/quotes.js"></script>
+  <script src="./js/todo.js"></script>
 </body>
 </html>
