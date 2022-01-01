@@ -1,4 +1,11 @@
 .hidden {
   display: none;
 }
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
