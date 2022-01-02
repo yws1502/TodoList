@@ -9,7 +9,7 @@ body {
   height: 100vh;
   color: #fff;
   text-align: center;
-  padding: 2rem;
+  padding: 2em;
 }
 
 body::before {
@@ -28,9 +28,9 @@ body::before {
   border: none;
   outline: none;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.6);
-  padding: .3rem;
+  padding: .3em;
 }
 
 .input-text:focus + .input-btn {
@@ -78,29 +78,26 @@ body::before {
 }
 
 #timezone-container {
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 #timezone-container #fullDate {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  font-size: 1.6em;
+  margin-bottom: 1em;
 }
 
 #timezone-container .clock-container .time {
-  font-size: 7rem;
+  font-size: 8em;
 }
 
 #timezone-container .clock-container .flex-column {
-  font-size: 3rem;
-  margin-left: .4rem;
-}
-
-#timezone-container .clock-container .flex-column em {
-  margin: .3rem;
+  font-size: 3em;
+  margin-left: .4em;
 }
 
 #timezone-container .clock-container .flex-column em + em {
   border-top: 1.2px solid rgba(255, 255, 255, 0.5);
+  margin-top: .3em;
 }
 
 #timezone-container .clock-container .flex-column .ampm {
@@ -108,41 +105,41 @@ body::before {
 }
 
 #timezone-container .clock-container .flex-column .sec {
-  font-size: 3.5rem;
+  font-size: 1.5em;
 }
 
 #greeting-container {
-  margin-bottom: 4rem;
+  margin-bottom: 4em;
 }
 
 #greeting-container #greeting-user {
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 #greeting-container #login-form label {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: .5em;
 }
 
 #todo-container {
   position: absolute;
   top: 15%;
   right: 5%;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   width: 250px;
   text-align: right;
 }
 
 #todo-container label {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 #todo-container .input-text {
   width: 75%;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
 
 #todo-container .input-btn {
@@ -152,7 +149,7 @@ body::before {
 #todo-container .todo-list {
   display: inline-block;
   width: 78%;
-  font-size: .8rem;
+  font-size: .8em;
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -166,21 +163,19 @@ body::before {
           justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   line-height: 16px;
-  padding: .8rem;
+  padding: .8em;
 }
 
 #todo-container .todo-list li button {
   border-radius: 100%;
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(255, 255, 255, 0.5);
-  font-size: .4rem;
-  text-indent: -1px;
+  font-size: .4em;
   color: #fff;
   opacity: 0.8;
-  width: 1.1rem;
-  height: 1.2rem;
   -webkit-transition: .4s;
   transition: .4s;
+  padding: 3px 4px;
 }
 
 #todo-container .todo-list li button:hover {
@@ -199,8 +194,8 @@ body::before {
 
 #quotes-container q {
   display: block;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
 
 #weather-container {
@@ -217,11 +212,23 @@ body::before {
 
 #weather-container .temp {
   vertical-align: 17px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 #weather-container .location {
   display: block;
-  font-size: 1rem;
+  font-size: 1em;
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 8px;
+  }
+  .container {
+    top: 15%;
+  }
+  #todo-container {
+    top: 40%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@ body {
   height: 100vh;
   color: #fff;
   text-align: center;
-  padding: 2rem;
+  padding: 2em;
   &::before {
     content: "";
     position: fixed;
@@ -26,9 +26,9 @@ body {
   border: none;
   outline: none;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   border-bottom: 1.5px solid rgba(255,255,255,0.6);
-  padding: .3rem;
+  padding: .3em;
   // margin-left: 20px;
   &:focus + .input-btn {
     opacity: 0.5;
@@ -68,26 +68,24 @@ body {
 
 // tinezone
 #timezone-container {
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
   #fullDate {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+    font-size: 1.6em;
+    margin-bottom: 1em;
   }
   .clock-container {
     .time {
-      font-size: 7rem;
+      font-size: 8em;
     }
     .flex-column {
-      font-size: 3rem;
-      margin-left: .4rem;
-      em {
-        margin: .3rem;
-      }
+      font-size: 3em;
+      margin-left: .4em;
       em + em {
         border-top: 1.2px solid rgba(255,255,255,0.5);
+        margin-top: .3em;
       }
       .ampm { color: rgba(255,255,255,0.8); }
-      .sec { font-size: 3.5rem;}
+      .sec { font-size: 1.5em;}
     }
   }
 }
@@ -95,15 +93,15 @@ body {
 
 // greeting
 #greeting-container {
-  margin-bottom: 4rem;
+  margin-bottom: 4em;
   #greeting-user {
-    font-size: 2rem;
+    font-size: 2em;
   }
   #login-form {
     label {
-      font-size: 1.4rem;
+      font-size: 1.4em;
       display: block;
-      margin-bottom: .5rem;
+      margin-bottom: .5em;
     }
   }
 }
@@ -114,17 +112,17 @@ body {
   position: absolute;
   top: 15%;
   right: 5%;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   width: 250px;
   text-align: right;
   label {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
   }
   .input-text {
     width: 75%;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1em;
+    margin-bottom: 1em;
   }
   .input-btn {
     right: 0;
@@ -132,7 +130,7 @@ body {
   .todo-list {
     display: inline-block;
     width: 78%;
-    font-size: .8rem;
+    font-size: .8em;
     border: 1px solid rgba(255,255,255,0.4);
     background-color: rgba(0,0,0,0.2);
     li {
@@ -140,18 +138,16 @@ body {
       justify-content: space-between;
       border-bottom: 1px solid rgba(255,255,255,0.4);
       line-height: 16px;
-      padding: .8rem;
+      padding: .8em;
       button {
         border-radius: 100%;
         border: 1px solid rgba(255,255,255,0.4);
         background-color: rgba(255,255,255,0.5);
-        font-size: .4rem;
-        text-indent: -1px;
+        font-size: .4em;
         color: #fff;
         opacity: 0.8;
-        width: 1.1rem;
-        height: 1.2rem;
         transition: .4s;
+        padding: 3px 4px;
         &:hover {
           color: #ff3737;
           border-color: #ff3737;
@@ -171,8 +167,8 @@ body {
   text-align: center;
   q {
     display: block;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1em;
+    margin-bottom: 1em;
   }
 }
 
@@ -189,10 +185,24 @@ body {
   }
   .temp {
     vertical-align: 17px;
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
   .location {
     display: block;
-    font-size: 1rem;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 8px;
+  }
+
+  .container {
+    top: 15%;
+  }
+
+  #todo-container {
+    top: 40%;
   }
 }

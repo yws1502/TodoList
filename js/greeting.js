@@ -5,8 +5,21 @@ const greeting = document.getElementById("greeting-user");
 const HIDDEN_CLASS = "hidden";
 const USER_KEY = "username";
 
+const date = new Date();
+const currentTime = date.getHours();
+
 function paintGreeting(username) {
-  greeting.textContent = `Good evening, ${username}.`;
+  let hi;
+  if (currentTime < 5) {
+    hi = "night";
+  } else if (currentTime < 12) {
+    hi = "morning";
+  } else if (currentTime < 18) {
+    hi = "afternoon";
+  } else if (currentTime < 24) {
+    hi = "evening";
+  }
+  greeting.textContent = `Good ${hi}, ${username}.`;
   greeting.classList.remove(HIDDEN_CLASS);
 }
 
